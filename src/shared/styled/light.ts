@@ -1,9 +1,24 @@
 import { ITheme } from './styled';
 
 const light:ITheme = {
-    bodyBackground: 'lightblue',
-    headerBackground: 'white',
-    headerMenuDelim: 'darkgrey'
+    background:{
+        header:{
+            container: 'white',
+            subcontainer: 'darkgrey',
+            elements: 'white',
+        },
+    },
+    color:{
+        header:{
+            text:{
+                default: 'black',
+                hover: 'indigo',
+                active: 'orange'
+            },
+            border: 'orange',
+            shadow: 'indigo'
+        }
+    }
 }
 
 export default light;

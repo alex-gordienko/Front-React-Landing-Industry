@@ -1,13 +1,15 @@
 import React, {useContext} from 'react';
+import {NavLink} from 'react-router-dom';
 import LanguageContext, {ILanguage} from '../../language/language';
 
 import {
     HeaderContainer,
     HeaderCenterBlock,
-    CenterMenuElement,
     HeaderLeftBlock,
     HeaderRightBlock
 } from './Header.styled';
+
+import Search from './Search';
 
 
 const Header = ()=>{
@@ -19,14 +21,24 @@ const Header = ()=>{
                 Here is a Pic
             </HeaderLeftBlock>
             <HeaderCenterBlock>
-                <CenterMenuElement><p>{language.header.menu.main}</p></CenterMenuElement>
-                <CenterMenuElement><p>{language.header.menu.service}</p></CenterMenuElement>
-                <CenterMenuElement><p>{language.header.menu.products}</p></CenterMenuElement>
-                <CenterMenuElement><p>{language.header.menu.about}</p></CenterMenuElement>
-                <CenterMenuElement><p>{language.header.menu.contacts}</p></CenterMenuElement>
+                    <NavLink exact={true} to='/' className='link' activeClassName='link--active'>
+                        {language.header.menu.main}
+                    </NavLink>
+                    <NavLink to='/service' className='link' activeClassName='link--active'>
+                        {language.header.menu.service}
+                    </NavLink>
+                    <NavLink to='/products' className='link' activeClassName='link--active'>
+                        {language.header.menu.products}
+                    </NavLink>
+                    <NavLink to='/about' className='link' activeClassName='link--active'>
+                        {language.header.menu.about}
+                    </NavLink>
+                    <NavLink to='/contacts' className='link' activeClassName='link--active'>
+                        {language.header.menu.contacts}
+                    </NavLink>
             </HeaderCenterBlock>
             <HeaderRightBlock>
-                Here is search
+                <Search/>
             </HeaderRightBlock>
         </HeaderContainer>
     )
