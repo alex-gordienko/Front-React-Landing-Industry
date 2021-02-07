@@ -9,6 +9,7 @@ import english from './shared/language/english';
 import light from './shared/styled/light';
 
 import Header from './shared/components/Header';
+import Body from './shared/components/Body';
 
 const App =()=>{
   const [lang, setLang] = useState(2);
@@ -16,7 +17,10 @@ const App =()=>{
   const Main = () =>{
   
     return(
-      <Header selectedLang={lang} onLangSelect={(e)=>setLang(e)}/>
+      <div>
+        <Header selectedLang={lang} onLangSelect={(e)=>setLang(e)}/>
+        <Body/>
+      </div>
     )
   }
 

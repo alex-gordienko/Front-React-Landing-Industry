@@ -35,11 +35,11 @@ const LanguageSelector = ({ selectedLang, onLangSelect}:ILangSelector)=>{
 
     return(
         <LangSelectedBlock onClick={()=>setActive(prev=>!prev)}>
-            <img src={langIcons.filter(elem=> elem.index===selectedLang)[0].icon}/>
+            <img src={langIcons.filter(elem=> elem.index===selectedLang)[0].icon} alt=''/>
             <StyledLangBlock active={active}>
                 {langIcons.filter(elem=> elem.index!==selectedLang)
                     .map(elem=>{
-                        return <li><img src={elem.icon} onClick={()=>onLangSelect(elem.index)}/></li>
+                        return <li><img src={elem.icon} onClick={()=>onLangSelect(elem.index)} alt=''/></li>
                     })}
             </StyledLangBlock>
         </LangSelectedBlock>
