@@ -10,9 +10,14 @@ import {
 } from './Header.styled';
 
 import Search from './Search';
+import LanguageSelector from './LanguageSelector';
 
+interface IHeaderProps{
+    selectedLang: number;
+    onLangSelect: (value: number)=> void;
+}
 
-const Header = ()=>{
+const Header = ({ selectedLang, onLangSelect}:IHeaderProps)=>{
     const language = useContext<ILanguage>(LanguageContext);
 
     return(
@@ -39,6 +44,7 @@ const Header = ()=>{
             </HeaderCenterBlock>
             <HeaderRightBlock>
                 <Search/>
+                <LanguageSelector selectedLang={selectedLang} onLangSelect={onLangSelect}/>
             </HeaderRightBlock>
         </HeaderContainer>
     )

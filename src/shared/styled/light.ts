@@ -4,7 +4,7 @@ const light:ITheme = {
     background:{
         header:{
             container: 'white',
-            subcontainer: 'darkgrey',
+            subcontainer: '#ECECEC',
             elements: 'white',
         },
     },

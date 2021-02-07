@@ -3,34 +3,47 @@ import styled from '@emotion/styled';
 
 
 const hiddenSearch = css`
-    left: 10px;
-    bottom: 10px;
-    width: 30px;
-    height: 30px;
+    display: none;
+    .search-icon-hidden{
+        display: block;
+    }
 `;
 
 const activeSearch = css`
-    bottom: -32px;
-    left: -25vh;
-    width: 250px;
-    height: 30px;
+    height: min-content;
+    .search-icon-hidden{
+        display: none;
+    }
 `;
 
-export const StyledSearchBlock = styled.div<{active:boolean}>`
-    position: absolute;
-    transition: all 1s;
-    display: flex;
-    border: 1px solid ${props=> props.theme.color.header.border};
-    
-    .search-icon{
-        margin: auto;
-    }
+export const SearchBlock = styled.div`
+    width: 50px;
+    height: 30px;
+    margin: auto 0px 10px 0px;
+    display: inline-block;
+    position: relative;
+    .search-icon-hidden, .search-icon-dropped{
+        display: block;
+        margin: 10px auto 5px auto;
+    };    
+`;
+
+export const SearchDropdown = styled.div<{active:boolean}>`
+    width: 40vh;
+    position: relative;
+    right: 30vh;
+    top: 12px;
+    background: ${props=> props.theme.background.header.subcontainer};
+    display: inline-flex;
 
     ${props=> props.active? activeSearch:hiddenSearch};
+
+    input{
+        width: max-content;
+        height: 25px;
+        margin: 2px 0px 2px 5px;
+        background: transparent;
+        border: none;
+    }
 `;
 
-export const StyledSearch = styled.input<{active:boolean}>`
-    margin: 4px 10px 4px 10px;
-    display: ${props=> props.active? 'inline-flex':'none'};
-    border: none;
-`;

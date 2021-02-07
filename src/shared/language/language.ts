@@ -10,6 +10,12 @@ export interface ILanguage{
             about: string;
             contacts: string;
         }
+        search:string;
+        langChange:{
+            toRU: string;
+            toUA: string;
+            toENG: string;
+        }
     }
 }
 

@@ -70,8 +70,9 @@ export const HeaderCenterBlock = styled.div`
 
 export const HeaderRightBlock = styled.div`
     height: 100%;
-    width: max-content;
+    width: 200px;
     min-width: max-content;
-    margin: 0px auto 10px 30px;
+    margin: 0px auto 10px 80px;
     position: relative;
+    display: inline-flex;
 `;
