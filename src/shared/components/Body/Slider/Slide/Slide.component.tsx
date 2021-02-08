@@ -11,16 +11,17 @@ interface ISlideProps{
     slide:{
         img: string;
         label: string;
-    }
+    };
+    isRightTextSide?:boolean;
 }
 
-const Slide = ({isCurrent, slide}:ISlideProps)=>{
+const Slide = ({isCurrent, slide, isRightTextSide}:ISlideProps)=>{
 
     return(
         <StyledSlide isCurrent={isCurrent}>
             <StyledImg src={slide.img} alt=''/>
-            <TextBlock>
-                {slide.label}
+            <TextBlock rightSide={isRightTextSide}>
+                <p>{slide.label}</p>
                 <span></span>
             </TextBlock>
         </StyledSlide>

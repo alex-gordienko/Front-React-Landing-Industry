@@ -17,7 +17,8 @@ interface ISliderProps {
         label: string;
     }[];
     options?:{
-        scrollType?:'consistantly'|'dots'
+        scrollType?:'consistantly'|'dots';
+        diffTextSides?: boolean;
     }
 }
 
@@ -62,7 +63,11 @@ const Slider = ({slides, options}:ISliderProps)=>{
         <StyledSlider>
             <SliderWrapper>
                 {slides.map((slide, indx)=>{
-                    return <Slide isCurrent={indx===currentPic? true: false} slide={slide}/>
+                    return <Slide 
+                    isCurrent={indx===currentPic? true: false} 
+                    slide={slide}
+                    isRightTextSide={indx%2!==0? true: false}
+                />
                 })}
             </SliderWrapper>
                 {SlideScroller(options?.scrollType)}

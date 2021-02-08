@@ -29,6 +29,7 @@ export const SearchBlock = styled.div`
 `;
 
 export const SearchDropdown = styled.div<{active:boolean}>`
+    z-index: 10;
     width: 40vh;
     position: relative;
     right: 30vh;

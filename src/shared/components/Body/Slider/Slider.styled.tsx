@@ -81,7 +81,7 @@ export const SliderDotsBlock = styled.div`
 export const SliderDot = styled.span<{isCurrent: boolean}>`
     display: inline-flex;
     margin: 3px;
-    background: ${props=> props.isCurrent ? props.theme.color.body.styledElements : props.theme.color.body.text.overPic};
+    background: ${props=> props.isCurrent ? props.theme.color.body.styledElements : props.theme.color.body.text.default};
     width: 10px;
     height: 10px;
     border-radius: 5px;

@@ -25,11 +25,12 @@ export const LangSelectedBlock = styled.div`
 `;
 
 export const StyledLangBlock = styled.ul<{active:boolean}>`
+    z-index: 10;
     list-style-type: none;
     width: 50px;
     position: absolute;
     top: 15px;
-    background: ${props=> props.theme.background.header.subcontainer};
+    background: transparent;
     padding: 0;
     display: block;
 
