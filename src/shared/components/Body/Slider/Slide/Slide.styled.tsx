@@ -16,11 +16,28 @@ export const StyledImg = styled.img`
 `;
 
 export const TextBlock = styled.div`
-    display: block;
-    position: relative;
-    top: 50%;
-    left: 10%;
-    width: 30%;
-    height: 50%;
-    background: rgba(0,0,0, 0.5);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 30%;
+    width: 50%;
+    height: 60%;
+    background: ${props=> props.theme.background.body.overPic};
+    opacity: 0.5;
+
+    color: ${props=> props.theme.color.body.text.overPic};
+    font-size: 2em;
+
+    span:before{
+        content: '';
+        width: 80%;
+        height: 1px;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        background: ${props=> props.theme.background.header.elements};
+        transition: all 0.5s;
+    };
 `;

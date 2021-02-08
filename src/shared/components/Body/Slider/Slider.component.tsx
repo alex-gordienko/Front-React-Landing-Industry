@@ -4,7 +4,9 @@ import {
     StyledSlider,
     SliderWrapper,
     SliderControlLeft,
-    SliderControlRight
+    SliderControlRight,
+    SliderDotsBlock,
+    SliderDot
 } from './Slider.styled';
 
 import Slide from './Slide';
@@ -14,9 +16,12 @@ interface ISliderProps {
         img: string;
         label: string;
     }[];
+    options?:{
+        scrollType?:'consistantly'|'dots'
+    }
 }
 
-const Slider = ({slides}:ISliderProps)=>{
+const Slider = ({slides, options}:ISliderProps)=>{
     const [currentPic, setCurrentPic] = useState(0);
 
     const SlideShow = (direction: 'left'|'right')=>{
@@ -30,6 +35,29 @@ const Slider = ({slides}:ISliderProps)=>{
         }
     };
 
+    const SlideScroller = (scrollType?:'consistantly'|'dots')=>{
+
+        return scrollType=='consistantly'?(
+            <div>
+                <SliderControlLeft href='#' role='button' onClick={()=>SlideShow('left')}>
+                <div className='arrow'></div>
+                </SliderControlLeft>
+                <SliderControlRight href='#' role='button' onClick={()=>SlideShow('right')}>
+                    <div className='arrow'></div>
+                </SliderControlRight>
+            </div>
+        ): scrollType=='dots'?(
+            <SliderDotsBlock>
+                {slides.map((slide, index)=>{
+                    return <SliderDot 
+                        isCurrent={index===currentPic? true: false} 
+                        onClick={()=>setCurrentPic(index)}
+                    />
+                })}
+            </SliderDotsBlock>
+        ): null
+    }
+
     return(
         <StyledSlider>
             <SliderWrapper>
@@ -37,8 +65,7 @@ const Slider = ({slides}:ISliderProps)=>{
                     return <Slide isCurrent={indx===currentPic? true: false} slide={slide}/>
                 })}
             </SliderWrapper>
-            <SliderControlLeft href='#' role='button' onClick={()=>SlideShow('left')}/>
-            <SliderControlRight href='#' role='button' onClick={()=>SlideShow('right')}/>
+                {SlideScroller(options?.scrollType)}
         </StyledSlider>
     )
 };

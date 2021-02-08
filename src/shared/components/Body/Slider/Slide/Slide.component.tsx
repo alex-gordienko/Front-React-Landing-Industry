@@ -19,7 +19,10 @@ const Slide = ({isCurrent, slide}:ISlideProps)=>{
     return(
         <StyledSlide isCurrent={isCurrent}>
             <StyledImg src={slide.img} alt=''/>
-            <TextBlock>{slide.label}</TextBlock>
+            <TextBlock>
+                {slide.label}
+                <span></span>
+            </TextBlock>
         </StyledSlide>
     )
 }

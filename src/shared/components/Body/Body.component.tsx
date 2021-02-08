@@ -13,7 +13,7 @@ const Body = () => {
 
     return(
         <StyledBody>
-            <Slider slides={constant}/>
+            <Slider slides={constant} options={{scrollType:'dots'}}/>
         </StyledBody>
     )
 };

@@ -7,6 +7,11 @@ const light:ITheme = {
             subcontainer: '#ECECEC',
             elements: 'white',
         },
+        body:{
+            container: 'white',
+            subcontainer: 'white',
+            overPic: 'rgba(0,0,0, 0.5)'
+        }
     },
     color:{
         header:{
@@ -17,6 +22,13 @@ const light:ITheme = {
             },
             border: 'orange',
             shadow: 'indigo'
+        },
+        body:{
+            text:{
+                default: 'black',
+                overPic: 'white'
+            },
+            styledElements: 'orange'
         }
     }
 }

@@ -5,6 +5,11 @@ export interface ITheme {
             subcontainer: string;
             elements: string;
         };
+        body:{
+            container: string;
+            subcontainer: string;
+            overPic: string;
+        }
     };
     color:{
         header:{
@@ -15,6 +20,13 @@ export interface ITheme {
             };
             border: string;
             shadow: string;
+        };
+        body:{
+            text:{
+                default: string;
+                overPic: string;
+            }
+            styledElements: string;
         }
     }
 }
