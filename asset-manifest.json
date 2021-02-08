@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.a1dd7d7d.chunk.js",
+    "main.js.map": "/static/js/main.a1dd7d7d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fae431d4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fae431d4.js.map",
+    "static/js/2.ea6b0011.chunk.js": "/static/js/2.ea6b0011.chunk.js",
+    "static/js/2.ea6b0011.chunk.js.map": "/static/js/2.ea6b0011.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.ea6b0011.chunk.js.LICENSE.txt": "/static/js/2.ea6b0011.chunk.js.LICENSE.txt",
+    "static/media/cat1.126930d0.jpg": "/static/media/cat1.126930d0.jpg",
+    "static/media/english.2d19fed4.svg": "/static/media/english.2d19fed4.svg",
+    "static/media/metal1.9e35e696.png": "/static/media/metal1.9e35e696.png",
+    "static/media/metal2.977512b6.jpg": "/static/media/metal2.977512b6.jpg",
+    "static/media/metal3.c601322d.jpg": "/static/media/metal3.c601322d.jpg",
+    "static/media/metal4.aa68eb81.jpg": "/static/media/metal4.aa68eb81.jpg",
+    "static/media/russia.c89ed68a.svg": "/static/media/russia.c89ed68a.svg",
+    "static/media/search.29571caf.svg": "/static/media/search.29571caf.svg",
+    "static/media/ukraine.c78d5d2c.svg": "/static/media/ukraine.c78d5d2c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fae431d4.js",
+    "static/js/2.ea6b0011.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.a1dd7d7d.chunk.js"
+  ]
+}
