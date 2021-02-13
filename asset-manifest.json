@@ -1,19 +1,27 @@
 {
   "files": {
     "main.css": "/Front-React-Landing-Industry/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Front-React-Landing-Industry/static/js/main.8b1cf0fc.chunk.js",
-    "main.js.map": "/Front-React-Landing-Industry/static/js/main.8b1cf0fc.chunk.js.map",
+    "main.js": "/Front-React-Landing-Industry/static/js/main.e4ee58d5.chunk.js",
+    "main.js.map": "/Front-React-Landing-Industry/static/js/main.e4ee58d5.chunk.js.map",
     "runtime-main.js": "/Front-React-Landing-Industry/static/js/runtime-main.505a64ed.js",
     "runtime-main.js.map": "/Front-React-Landing-Industry/static/js/runtime-main.505a64ed.js.map",
-    "static/js/2.387ebd98.chunk.js": "/Front-React-Landing-Industry/static/js/2.387ebd98.chunk.js",
-    "static/js/2.387ebd98.chunk.js.map": "/Front-React-Landing-Industry/static/js/2.387ebd98.chunk.js.map",
+    "static/js/2.d00dcfef.chunk.js": "/Front-React-Landing-Industry/static/js/2.d00dcfef.chunk.js",
+    "static/js/2.d00dcfef.chunk.js.map": "/Front-React-Landing-Industry/static/js/2.d00dcfef.chunk.js.map",
     "index.html": "/Front-React-Landing-Industry/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/Front-React-Landing-Industry/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.387ebd98.chunk.js.LICENSE.txt": "/Front-React-Landing-Industry/static/js/2.387ebd98.chunk.js.LICENSE.txt",
+    "static/js/2.d00dcfef.chunk.js.LICENSE.txt": "/Front-React-Landing-Industry/static/js/2.d00dcfef.chunk.js.LICENSE.txt",
     "static/media/cat1.126930d0.jpg": "/Front-React-Landing-Industry/static/media/cat1.126930d0.jpg",
     "static/media/english.2d19fed4.svg": "/Front-React-Landing-Industry/static/media/english.2d19fed4.svg",
     "static/media/metal1.9e35e696.png": "/Front-React-Landing-Industry/static/media/metal1.9e35e696.png",
     "static/media/metal2.977512b6.jpg": "/Front-React-Landing-Industry/static/media/metal2.977512b6.jpg",
+    "static/media/metal21.2108c8cb.jpg": "/Front-React-Landing-Industry/static/media/metal21.2108c8cb.jpg",
+    "static/media/metal22.a31cc974.jpg": "/Front-React-Landing-Industry/static/media/metal22.a31cc974.jpg",
+    "static/media/metal224.b4315a3f.jpg": "/Front-React-Landing-Industry/static/media/metal224.b4315a3f.jpg",
+    "static/media/metal23.33df9f74.jpg": "/Front-React-Landing-Industry/static/media/metal23.33df9f74.jpg",
+    "static/media/metal24.dc4b9428.jpg": "/Front-React-Landing-Industry/static/media/metal24.dc4b9428.jpg",
+    "static/media/metal25.5a1b06d8.jpg": "/Front-React-Landing-Industry/static/media/metal25.5a1b06d8.jpg",
+    "static/media/metal26.62ee6266.jpg": "/Front-React-Landing-Industry/static/media/metal26.62ee6266.jpg",
+    "static/media/metal27.8734ddde.jpg": "/Front-React-Landing-Industry/static/media/metal27.8734ddde.jpg",
     "static/media/metal3.c601322d.jpg": "/Front-React-Landing-Industry/static/media/metal3.c601322d.jpg",
     "static/media/metal4.aa68eb81.jpg": "/Front-React-Landing-Industry/static/media/metal4.aa68eb81.jpg",
     "static/media/russia.c89ed68a.svg": "/Front-React-Landing-Industry/static/media/russia.c89ed68a.svg",
@@ -22,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.505a64ed.js",
-    "static/js/2.387ebd98.chunk.js",
+    "static/js/2.d00dcfef.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.8b1cf0fc.chunk.js"
+    "static/js/main.e4ee58d5.chunk.js"
   ]
 }
