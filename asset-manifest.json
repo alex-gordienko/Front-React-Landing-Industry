@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Front-React-Landing-Industry/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Front-React-Landing-Industry/static/js/main.e4ee58d5.chunk.js",
-    "main.js.map": "/Front-React-Landing-Industry/static/js/main.e4ee58d5.chunk.js.map",
+    "main.js": "/Front-React-Landing-Industry/static/js/main.e416a07b.chunk.js",
+    "main.js.map": "/Front-React-Landing-Industry/static/js/main.e416a07b.chunk.js.map",
     "runtime-main.js": "/Front-React-Landing-Industry/static/js/runtime-main.505a64ed.js",
     "runtime-main.js.map": "/Front-React-Landing-Industry/static/js/runtime-main.505a64ed.js.map",
     "static/js/2.d00dcfef.chunk.js": "/Front-React-Landing-Industry/static/js/2.d00dcfef.chunk.js",
@@ -10,8 +10,11 @@
     "index.html": "/Front-React-Landing-Industry/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/Front-React-Landing-Industry/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.d00dcfef.chunk.js.LICENSE.txt": "/Front-React-Landing-Industry/static/js/2.d00dcfef.chunk.js.LICENSE.txt",
+    "static/media/FullWidth1.2912278a.jpg": "/Front-React-Landing-Industry/static/media/FullWidth1.2912278a.jpg",
+    "static/media/FullWidth2.d62812bb.jpg": "/Front-React-Landing-Industry/static/media/FullWidth2.d62812bb.jpg",
     "static/media/cat1.126930d0.jpg": "/Front-React-Landing-Industry/static/media/cat1.126930d0.jpg",
     "static/media/english.2d19fed4.svg": "/Front-React-Landing-Industry/static/media/english.2d19fed4.svg",
+    "static/media/instagram.53626cb1.svg": "/Front-React-Landing-Industry/static/media/instagram.53626cb1.svg",
     "static/media/metal1.9e35e696.png": "/Front-React-Landing-Industry/static/media/metal1.9e35e696.png",
     "static/media/metal2.977512b6.jpg": "/Front-React-Landing-Industry/static/media/metal2.977512b6.jpg",
     "static/media/metal21.2108c8cb.jpg": "/Front-React-Landing-Industry/static/media/metal21.2108c8cb.jpg",
@@ -26,12 +29,13 @@
     "static/media/metal4.aa68eb81.jpg": "/Front-React-Landing-Industry/static/media/metal4.aa68eb81.jpg",
     "static/media/russia.c89ed68a.svg": "/Front-React-Landing-Industry/static/media/russia.c89ed68a.svg",
     "static/media/search.29571caf.svg": "/Front-React-Landing-Industry/static/media/search.29571caf.svg",
+    "static/media/telegram.18002451.svg": "/Front-React-Landing-Industry/static/media/telegram.18002451.svg",
     "static/media/ukraine.c78d5d2c.svg": "/Front-React-Landing-Industry/static/media/ukraine.c78d5d2c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.505a64ed.js",
     "static/js/2.d00dcfef.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e4ee58d5.chunk.js"
+    "static/js/main.e416a07b.chunk.js"
   ]
 }
