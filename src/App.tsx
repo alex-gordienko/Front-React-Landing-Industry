@@ -10,9 +10,10 @@ import light from './shared/styled/light';
 
 import Header from './shared/components/Header';
 import Body from './shared/components/Body';
+import Footer from './shared/components/Footer'
 
 const App =()=>{
-  const [lang, setLang] = useState(2);
+  const [lang, setLang] = useState(1);
 
   const Main = () =>{
   
@@ -20,6 +21,7 @@ const App =()=>{
       <div>
         <Header selectedLang={lang} onLangSelect={(e)=>setLang(e)}/>
         <Body/>
+        <Footer/>
       </div>
     )
   }
@@ -27,7 +29,7 @@ const App =()=>{
   return(
     <LanguageContext.Provider value={lang===1? english: russian}>
       <ThemeProvider theme={light}>
-        <BrowserRouter>
+        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
           <Switch>
             <Route path='/' component={Main}/>
           </Switch>

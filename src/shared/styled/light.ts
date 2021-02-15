@@ -11,24 +11,31 @@ const light:ITheme = {
             container: 'white',
             subcontainer: 'white',
             overPic: 'rgba(0,0,0, 0.5)'
-        }
+        },
+        footer: 'white'
     },
     color:{
         header:{
             text:{
-                default: 'black',
+                default: '#3E3E3E',
                 hover: 'indigo',
-                active: 'orange'
+                active: '#E4B56B'
             },
-            border: 'orange',
+            border: '#E4B56B',
             shadow: 'indigo'
         },
         body:{
             text:{
-                default: 'black',
+                default: '#3E3E3E',
                 overPic: 'white'
             },
-            styledElements: 'orange'
+            styledElements: '#E4B56B'
+        },
+        footer:{
+            text:{
+                label: '#3E3E3E',
+                default: '#AEAEAE'
+            }
         }
     }
 }

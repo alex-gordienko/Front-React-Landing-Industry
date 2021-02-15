@@ -13,7 +13,8 @@ interface IContentContainerProps{
     data:{
         img: string;
         label: string;
-    }[]
+        text?: string;
+    }[];
 }
 
 const ContentContainer = ({displayType, title, data}: IContentContainerProps) =>{
@@ -23,12 +24,17 @@ const ContentContainer = ({displayType, title, data}: IContentContainerProps) =>
             <StyledLabel>
                 {title}
             </StyledLabel>
-            <PictureBlock>
+            <PictureBlock displayType={displayType}>
                 {data.map((picture, index)=>{
                     return (
-                        <Picture displayType={displayType}>
+                        <Picture displayType={displayType} isRightSide={index%2!=0}>
                             <img src={picture.img} alt={picture.label}/>
-                            <div className='text-box'><p>{picture.label}</p></div>
+                            <div className='text-box'>
+                                <p className='label'>{picture.label}</p>
+                                {picture.text && 
+                                    <p className='text'>{picture.text}</p>
+                                }
+                            </div>
                         </Picture>
                     )
                 })}

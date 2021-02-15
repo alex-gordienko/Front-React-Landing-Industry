@@ -9,7 +9,8 @@ export interface ITheme {
             container: string;
             subcontainer: string;
             overPic: string;
-        }
+        };
+        footer: string;
     };
     color:{
         header:{
@@ -27,6 +28,12 @@ export interface ITheme {
                 overPic: string;
             }
             styledElements: string;
+        };
+        footer:{
+            text:{
+                label: string;
+                default: string;
+            }
         }
     }
 }
